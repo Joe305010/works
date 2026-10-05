@@ -18,4 +18,5 @@ another = {
 def get_full_address(student):
     address = student['address']
     return f"{address['street']}, {address['city']}, {address['zip_code']} {address['co-ordinates']}"
+
 print(get_full_address(another))
