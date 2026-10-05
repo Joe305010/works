@@ -20,3 +20,9 @@ def get_full_address(student):
     return f"{address['street']}, {address['city']}, {address['zip_code']} {address['co-ordinates']}"
 
 print(get_full_address(another))
+
+
+def get_student_courses(student):
+    return student['name'] + " does " + ", ".join(student['courses'])
+
+print(get_student_courses(another))
