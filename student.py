@@ -20,3 +20,8 @@ def get_full_address(student):
     return f"{address['street']}, {address['city']}, {address['zip_code']} {address['co-ordinates']}"
 
 print(get_full_address(another))
+
+
+def check_student_status(student):
+    return student.get('is_student', False)
+print(check_student_status(another))
