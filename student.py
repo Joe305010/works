@@ -21,11 +21,7 @@ def get_full_address(student):
 
 print(get_full_address(another))
 
-def get_courses(student):
-    name = student.get('name')
-    courses = student.get("courses")
-    math = courses[0]
-    science = courses[1]
-    history = courses[2]
-    return f"{name} does {math}, {science} and {history}."
-print(get_courses(another))
+
+def check_student_status(student):
+    return student.get('is_student', False)
+print(check_student_status(another))
